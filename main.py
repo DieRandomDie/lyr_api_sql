@@ -1,18 +1,6 @@
-import mysql.connector as sql
-from config import host, user, password, database
+import JSON
+import db
+from JSON import *
 
-db = sql.connect(
-    host=host,
-    user=user,
-    password=password,
-    database=database
-)
-
-print(f'Connected to database: {db.is_connected()}')
-
-cur = db.cursor()
-
-cur.execute("SHOW TABLES;")
-
-for x in cur:
-    print(x)
+# db.update_db(db.CREATE_TABLE)
+JSON.api_to_object('7aa25915cc3d82bda3c1b5c1179d98fc')
