@@ -1,7 +1,7 @@
-import mysql.connector as sql
+import psycopg2 as sql
 from config import host, user, password, database
 
-CREATE_TABLE = '''create table IF NOT EXISTS users
+CREATE_TABLE = '''create table IF not exists users
 (
     discord_name                   varchar(50)    not null,
     discord_id                     varchar(50)    not null,
@@ -84,13 +84,13 @@ CREATE_TABLE = '''create table IF NOT EXISTS users
 def update_db(query):
     db = sql.connect(
         host=host,
+        port=5432,
+        database=database,
         user=user,
-        password=password,
-        database=database
+        password=password
     )
-
     cur = db.cursor()
-
     cur.execute(query)
     cur.close()
+    db.commit()
     db.close()

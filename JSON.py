@@ -35,17 +35,16 @@ def api_to_object(key):
     data.currency.tokens = int(data.currency.tokens)
     data.currency.bound_tokens = int(data.currency.bound_tokens)
     data.currency.money = data.currency.money.replace('_', ' ')
+    data.currency.jade = int(data.currency.jade)
+    data.currency.jewel_frags = int(data.currency.jewel_frags)
+    data.currency.enchanting_dust = int(data.currency.enchanting_dust)
+    data.currency.dungeon_points = int(data.currency.dungeon_points)
+    data.currency.diamonds = int(data.currency.diamonds)
+    data.currency.rubies = int(data.currency.rubies)
+    data.currency.sapphires = int(data.currency.sapphires)
+    data.currency.emeralds = int(data.currency.emeralds)
+    data.currency.opals = int(data.currency.opals)
     '''
-    data.currency.jade
-    data.currency.jewel_frags
-    data.currency.enchanting_dust
-    data.currency.dungeon_points
-    data.currency.diamonds
-    data.currency.rubies
-    data.currency.sapphires
-    data.currency.emeralds
-    data.currency.opals
-    
     # GUILD DATA
     data.guild.guild_name
     data.guild.guild_level
@@ -174,21 +173,21 @@ def api_to_object(key):
     print(f'data.token_boosts.areaboss_taxonomy value: {data.token_boosts.areaboss_taxonomy}')
     print(f'data.token_boosts.tradeskill_slots value: {data.token_boosts.tradeskill_slots}')
     print(f'data.token_boosts.jewellery_slots value: {data.token_boosts.jewellery_slots}')
-    print(data.equipment.shortsword['orb'])
-    print(data.equipment.shortsword['level'])
-    print(data.equipment.dagger['orb'])
-    print(data.equipment.dagger['level'])
-    print(data.equipment.helmet['orb'])
-    print(data.equipment.helmet['level'])
-    print(data.equipment.shoulders['orb'])
-    print(data.equipment.shoulders['level'])
-    print(data.equipment.wrist['orb'])
-    print(data.equipment.wrist['level'])
-    print(data.equipment.gloves['orb'])
-    print(data.equipment.gloves['level'])
-    print(data.equipment.chestpiece['orb'])
-    print(data.equipment.chestpiece['level'])
-    print(data.equipment.leggings['orb'])
-    print(data.equipment.leggings['level'])
-    print(data.equipment.boots['orb'])
-    print(data.equipment.boots['level'])
+    print(f"data.equipment.shortsword['orb'] value: {data.equipment.shortsword['orb']}")
+    print(f"data.equipment.shortsword['level'] value: {data.equipment.shortsword['level']}")
+    print(f"data.equipment.dagger['orb'] value: {data.equipment.dagger['orb']}")
+    print(f"data.equipment.dagger['level'] value: {data.equipment.dagger['level']}")
+    print(f"data.equipment.helmet['orb'] value: {data.equipment.helmet['orb']}")
+    print(f"data.equipment.helmet['level'] value: {data.equipment.helmet['level']}")
+    print(f"data.equipment.shoulders['orb'] value: {data.equipment.shoulders['orb']}")
+    print(f"data.equipment.shoulders['level'] value: {data.equipment.shoulders['level']}")
+    print(f"data.equipment.wrist['orb'] value: {data.equipment.wrist['orb']}")
+    print(f"data.equipment.wrist['level'] value: {data.equipment.wrist['level']}")
+    print(f"data.equipment.gloves['orb'] value: {data.equipment.gloves['orb']}")
+    print(f"data.equipment.gloves['level'] value: {data.equipment.gloves['level']}")
+    print(f"data.equipment.chestpiece['orb'] value: {data.equipment.chestpiece['orb']}")
+    print(f"data.equipment.chestpiece['level'] value: {data.equipment.chestpiece['level']}")
+    print(f"data.equipment.leggings['orb'] value: {data.equipment.leggings['orb']}")
+    print(f"data.equipment.leggings['level'] value: {data.equipment.leggings['level']}")
+    print(f"data.equipment.boots['orb'] value: {data.equipment.boots['orb']}")
+    print(f"data.equipment.boots['level'] value: {data.equipment.boots['level']}")
